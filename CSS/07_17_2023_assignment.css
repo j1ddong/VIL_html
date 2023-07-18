@@ -1,0 +1,35 @@
+.textCenter {
+	text-align: center;
+}
+.profileBorder {
+	border: 1px solid black;
+}
+.borderBottom {
+	border-bottom: 1px solid black;
+}
+.smallPadding {
+	padding: 10px 0;
+}
+.smallMarginUD {
+	margin: 10px 0;
+}
+.smallMarginLR {
+	margin: 0 5px;
+}
+#profileBox {
+	width: 50%;
+	margin: auto;
+}
+#profileImg {
+	width: 80%;
+	height: fit-content;
+	margin: 10px 0;
+}
+#email {
+	background-color: green;
+	color: white;
+}
+#email:hover {
+	color: aqua;
+	background-color: purple;
+}

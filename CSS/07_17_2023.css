@@ -1,0 +1,12 @@
+p {
+	background-color: red;
+}
+p:p1 {
+	color: red;
+}
+.fa-heart {
+	color: tomato;
+}
+.glyphicon-cloud {
+	font-size: 100px;
+}
