@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<audio controls autoplay loop>
+			<source src="c:\Users\jiunHan\Downloads\sample.mp3" type="audio/mpeg" />
+		</audio>
+		<iframe
+			src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"
+		></iframe>
+		<hr />
+		<form>
+			<label>First Name</label>
+			<input type="text" />
+		</form>
+		<form>
+			<input type="checkbox" id="html" name="html" value="html" />
+			<label id="html">HTML</label>
+			<input type="checkbox" id="css" name="css" value="css" />
+			<label id="css">CSS</label>
+			<input type="checkbox" id="js" name="js" value="js" />
+			<label id="js">JS</label>
+		</form>
+		<form>
+			<label>Java</label>
+			<input type="radio" id="java" name="radio" value="java" />
+			<label>Python</label>
+			<input type="radio" id="python" name="radio" value="python" />
+			<input
+				type="button"
+				value="ok"
+				onclick="alert('You have clicked the button')"
+			/>
+		</form>
+		<input type="color" id="color1" name="red" value="#e66465" />
+		<div>
+			<input type="date" id="birthday" name="birthday" />
+			<label for="birthday">Select birthday</label>
+		</div>
+		<div>
+			<input type="date" id="id1" name="mindate" min="2022-12-01" />
+			<label for="id1">Minimum date</label>
+		</div>
+		<div>
+			<input type="date" id="id2" name="maxdate" max="2023-07-13" />
+			<label for="id2">Maximum date</label>
+		</div>
+		<div>
+			<input type="datetime-local" id="id3" name="datetimelocal" />
+		</div>
+		<div>
+			<label for="email">email</label>
+			<input type="email" id="email" name="email" />
+		</div>
+		<div>
+			<labe for="image">image</labe>
+			<input
+				type="image"
+				id="image"
+				name="image"
+				src="c:/Users/jiunHan/Downloads/arrow.png"
+				alt="arrowImage"
+			/>
+		</div>
+		<div>
+			<labe for="file">file</labe>
+			<input type="file" id="file" name="file" />
+		</div>
+		<div>
+			<labe for="month">month</labe>
+			<input type="month" id="month" name="month" />
+		</div>
+		<div>
+			<label for="number">only number</label>
+			<input
+				type="number"
+				id="number"
+				name="number"
+				min="10"
+				max="100"
+				step="10"
+			/>
+		</div>
+		<div>
+			<label for="google">fake google</label>
+			<input type="search" id="search" name="search" />
+		</div>
+		<div>
+			<label for="tel">cellphone number</label>
+			<input
+				type="tel"
+				id="tel"
+				name="tel"
+				pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+				placeholder="123-456-789"
+				maxlength="12"
+				required
+				autofocus
+			/>
+		</div>
+		<div>
+			<label for="week">week</label>
+			<input id="week" name="week" type="week" />
+		</div>
+		<div>
+			<label for="readonly">readonly</label>
+			<input type="text" id="readonly" name="readonly" value="john" readonly />
+		</div>
+		<div>
+			<label for="disabled">disabled</label>
+			<input type="text" id="disabled" name="disabled" value="john" disabled />
+		</div>
+		<div>
+			<label for="list">It is a list</label>
+			<input type="list" name="list" id="list" list="lists" />
+			<datalist id="lists">
+				<option value="Internet Explorer"></option>
+				<option value="Firefox"></option>
+				<option value="Google Chrome"></option>
+				<option value="Opera"></option>
+				<option value="Safari"></option>
+			</datalist>
+		</div>
+		<div>
+			<label for="region">지역을 선택해주세요.</label><br />
+			<select name="region" id="region">
+				<option value="#" disabled>선택</option>
+				<option value="seoul">서울</option>
+				<option value="dj">대전</option>
+				<option value="gj">광주</option>
+				<option value="gm">구미</option>
+			</select>
+		</div>
+	</body>
+</html>

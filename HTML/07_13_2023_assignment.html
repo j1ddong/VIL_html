@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>07_13_2023</title>
+	</head>
+	<body>
+		<div>
+			<h2 style="text-align: center">Survey Form</h2>
+			<form>
+				<label for="firstName">Customer FirstName</label>
+				<input type="text" id="firstName" name="firstName" autofocus required />
+				<br />
+				<div style="text-align: end">
+					<label for="lastName">Customer LastName</label>
+					<input type="text" id="lastName" name="lastName" required />
+				</div>
+				<div style="background-color: aquamarine">
+					<label for="address">Address</label>
+					<input type="text" id="address" name="address" required />
+				</div>
+				<div style="text-align: end">
+					<label for="city">City</label>
+					<input type="text" id="city" name="city" required />
+				</div>
+				<div style="text-align: center; color: brown">
+					<label for="phoneNumber">Phone</label>
+					<input type="number" id="phoneNumner" name="phoneNumber" required />
+				</div>
+				<label for="birthDate">Birth-date</label>
+				<input
+					type="date"
+					id="birthDate"
+					name="birthDate"
+					max="2023-07-23"
+					required
+				/>
+				<br />
+				<label for="status">Status in Canada</label>
+				<select name="status" id="status" required>
+					<option value="Student">Student</option>
+					<option value="Worker">Worker</option>
+					<option value="PR">PR</option>
+				</select>
+				<div style="text-align: center; background-color: cornflowerblue">
+					<p>Gender</p>
+					<label for="woman">Woman</label>
+					<input type="checkbox" id="woman" name="gender" />
+					<label for="man">Man</label>
+					<input type="checkbox" id="man" name="gender" />
+				</div>
+				<p>Skills</p>
+				<label for="Java">Java</label>
+				<input type="radio" id="java" name="skills" required />
+				<label for="Python">Python</label>
+				<input type="radio" id="python" name="skills" required />
+				<label for="javaScript">javaScript</label>
+				<input type="radio" id="javaScript" name="skills" required />
+				<br />
+				<input
+					style="margin: 20px 0"
+					type="image"
+					src="data:image/png;base64,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"
+				/>
+				<br />
+				<label for="resume">Upload Resume</label>
+				<input type="file" id="resume" name="resume" required />
+				<p>Rating</p>
+				<label for="1">1</label>
+				<input type="radio" id="1" name="rating" required />
+				<label for="2">2</label>
+				<input type="radio" id="2" name="rating" required />
+				<label for="3">3</label>
+				<input type="radio" id="3" name="rating" required />
+				<label for="4">4</label>
+				<input type="radio" id="4" name="rating" required />
+				<label for="5">5</label>
+				<input type="radio" id="5" name="rating" required />
+				<br />
+				<input type="submit" />
+			</form>
+		</div>
+	</body>
+</html>
