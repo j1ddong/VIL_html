@@ -92,3 +92,52 @@
 9. `<mark>`
    
    The `<mark>` tag defines text that should be marked or highlighted.
+   
+   <p>Do not forget to buy <mark>milk</mark> today.</p>
+
+```html
+<p>Do not forget to buy <mark>milk</milk> today </p>
+```
+
+10. `del` & `ins`
+    
+    - The `<del>` tag defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.
+    
+    - The `<ins>` tag defines a text that has been inserted into a document. Browsers will usually underline inserted text.
+    
+    <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+
+```html
+<p>My favorite color is <del>blue</del></p>
+```
+
+11. `a`
+    
+    The `<a>` tag defines a hyperlink, which is used to link from one page to another.
+    
+    The most important attribute of the `<a>` element is the `href` attribute, which indicates the link's destination.
+
+```html
+<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+```
+
+12. `button`
+    
+    The `<button>` tag defines a clickable button.
+    
+    <button type="button">Click Me!</button>
+
+```html
+<button type="button">Click Me!</button>
+```
+
+13. `label`
+    
+    The `<label>` tag defines a label for several elements
+    
+      <label for="html">HTML</label>
+    
+    ```html
+    <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+    ```
