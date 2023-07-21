@@ -141,3 +141,96 @@
     <input type="radio" id="html" name="fav_language" value="HTML">
       <label for="html">HTML</label><br>
     ```
+
+14. `input`
+    The `<input>` tag specifies an input field where the user can enter data.
+    
+    `type=text` is the default value
+    
+    ```html
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    ```
+
+15. `form`
+    
+    The `<form>` tag is used to create an HTML form for user input.
+
+16. `img`
+    
+    The `<form>` tag is used to create an HTML form for user input.
+    
+    - src - Specifies the path to the image
+    - alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed
+
+17. `table`
+    
+    The `<table>` tag defines an HTML table.
+    
+    An HTML table consists of one `<table>` element and one or more , <tr>, <th> and <td> elements.
+    
+    The <tr> element defines a table row, the <th> element defines a table header, and the <td> element defines a table cell.
+    
+    An HTML table may also include [<caption>](https://www.w3schools.com/tags/tag_caption.asp), [<colgroup>](https://www.w3schools.com/tags/tag_colgroup.asp), [<thead>](https://www.w3schools.com/tags/tag_thead.asp), [<tfoot>](https://www.w3schools.com/tags/tag_tfoot.asp), and [<tbody>](https://www.w3schools.com/tags/tag_tbody.asp) elements.
+    
+    <table>  
+      <tr>  
+        <th>Month</th>  
+        <th>Savings</th>  
+      </tr>  
+      <tr>  
+        <td>January</td>  
+        <td>$100</td>  
+      </tr>  
+    </table>
+
+```html
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+```
+
+18. `ol` & `ul`
+    
+    The `<ol>` tag defines an ordered list. An ordered list can be numerical or alphabetical.
+    
+    The `<ul>` tag defines an unordered (bulleted) list.
+    
+    The <li> tag is used to define each list item.
+    
+    <ol>  
+      <li>Coffee</li>  
+      <li>Tea</li>  
+      <li>Milk</li>  
+    </ol>
+    
+    <ul>  
+      <li>Coffee</li>  
+      <li>Tea</li>  
+      <li>Milk</li>  
+    </ul>
+    
+    ```html
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </o<ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>l>
+    
+    ```
