@@ -1,0 +1,21 @@
+#box {
+	text-align: center;
+}
+.galleryBox {
+	margin: 50px 0;
+}
+.gallery {
+	border: 1px solid black;
+	display: inline-block;
+}
+.img {
+	width: 300px;
+	height: 200px;
+}
+.img:hover {
+	width: 310px;
+	height: 210px;
+}
+.gallery:hover {
+	border: 2px solid skyblue;
+}

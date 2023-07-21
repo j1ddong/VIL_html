@@ -1,0 +1,54 @@
+#changeColor {
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	animation-name: changeColor;
+	animation-duration: 4s;
+}
+
+@keyframes changeColor {
+	0% {
+		background-color: red;
+	}
+	25% {
+		background-color: aqua;
+	}
+	50% {
+		background-color: brown;
+	}
+	100% {
+		background-color: yellow;
+	}
+}
+
+#rotate {
+	width: 50px;
+	height: 50px;
+	animation-name: rotate;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	border-radius: 50%;
+	position: absolute;
+	inset: 250px 10px;
+	border: 1px solid black;
+}
+
+#innerCircle {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: black;
+	position: absolute;
+	inset: 2px;
+	overflow: hidden;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(-360deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
