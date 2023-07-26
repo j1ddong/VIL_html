@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'EB Garamond', serif;
+	color: #fff;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+a {
+	color: #4070f4;
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+.container {
+	position: relative;
+	max-width: 48%;
+	width: 100%;
+	margin: 30px auto;
+	text-align: center;
+}
+
+/* background image */
+.parallax {
+	width: 100%;
+	height: calc(100vh - 60px);
+	padding: 5px;
+	background-position: center 60%;
+	background-image: url(./hawaii.jpg);
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 16px;
+}
+
+.flexItems {
+	display: inline-block;
+	width: calc(100% / 3);
+	height: 100%;
+	padding: 10px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bolder;
+	font-style: italic;
+}
+
+.flexItems:first-child {
+	border-right: 2px solid;
+}
+
+.flexItems:last-child {
+	border-left: 2px solid;
+}
+
+.title {
+	font-size: 8rem;
+	color: #f0b4d9;
+	font-family: 'Encode Sans', sans-serif;
+	line-height: 1;
+	text-shadow: 5px 5px 2px white;
+	letter-spacing: 0.08em;
+}
+
+.year,
+.subtitle {
+	font-size: 72px;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.year {
+	margin-top: 20px;
+}
+
+.copyright {
+	position: absolute;
+	bottom: 2px;
+	left: 50%;
+	transform: translate(-50%);
+	size: 18px;
+}

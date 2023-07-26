@@ -1,0 +1,71 @@
+.content {
+	margin: auto;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#header {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-bar {
+	background-color: #f3f3f3;
+}
+
+ul {
+	display: flex;
+	list-style-type: none;
+	gap: 0px;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+ul a {
+	display: inline-block;
+	padding: 10px 20px;
+}
+ul a:hover {
+	background-color: #008cba;
+}
+#intro {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#img {
+	margin: auto;
+	width: 300px;
+}
+.footer a {
+	font-size: 150%;
+}
+.footer h3 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contactInfo {
+	margin: 0 10px;
+}
+
+iframe {
+	float: left;
+	margin-right: 10px;
+}
+.explanation {
+	height: 200px;
+	padding: 0 50px;
+}
+.workImg {
+	width: 450px;
+	height: auto;
+}
+.definition {
+	text-align: left;
+	padding-left: 400px;
+}
+.body {
+	width: 80%;
+	margin: auto;
+}
+.form {
+	margin: 10px 0;
+}
