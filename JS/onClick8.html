@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>onClick8</title>
+		<script>
+			const calcul = () => {
+				const item1Amount = Number(
+					document.getElementById('item1Amount').value
+				);
+				const item1Price = Number(document.getElementById('item1Price').value);
+				const item2Amount = Number(
+					document.getElementById('item2Amount').value
+				);
+				const item2Price = Number(document.getElementById('item2Price').value);
+				const result = item1Amount * item1Price + item2Amount * item2Price;
+				document.getElementById('result').innerHTML = result;
+			};
+		</script>
+	</head>
+	<body>
+		<form>
+			<span>Item1</span>
+			<input id="item1Amount" name="Item1" type="number" />
+			<input id="item1Price" name="Item1" type="number" />
+			<br />
+			<span>Item2</span>
+			<input id="item2Amount" name="Item2" type="number" />
+			<input id="item2Price" name="Item2" type="number" />
+			<br />
+			<button type="button" onclick="calcul()">submit</button>
+		</form>
+		<span>Total Price:</span>
+		<span id="result"></span>
+		<input type="letter" id="letter" />
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>onClick6</title>
+		<script>
+			const star = () => {
+				const num = Number(document.getElementById('number').value);
+				for (let i = 0; i < num; i++) {
+					document.write('*');
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<form>
+			<label for="number">Enter Number</label>
+			<input id="number" name="number" type="number" />
+			<button type="submit" onclick="star()">OK</button>
+		</form>
+	</body>
+</html>

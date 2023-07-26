@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			const findMax = () => {
+				const number1 = Number(document.getElementById('number1').value);
+				const number2 = Number(document.getElementById('number2').value);
+				const number3 = Number(document.getElementById('number3').value);
+				let maxNum;
+				if (number1 >= number2 && number1 >= number3) {
+					maxNum = number1;
+				} else if (number2 >= number1 && number2 >= number3) {
+					maxNum = number2;
+				} else {
+					maxNum = number3;
+				}
+				document.write('Max Number is ' + maxNum);
+
+				const result = Math.max(number1, number2, number3);
+				document.write('This is calculated by Math function ' + result);
+			};
+		</script>
+	</head>
+	<body>
+		<form>
+			<label for="number1">Number1 </label>
+			<input type="number" id="number1" name="number1" />
+			<br />
+			<label for="number2">Number2 </label>
+			<input type="number" id="number2" name="number2" />
+			<br />
+			<label for="number3">Number3 </label>
+			<input type="number" id="number3" name="number3" />
+			<br />
+			<button type="submit" onclick="findMax()">Submit</button>
+		</form>
+	</body>
+</html>

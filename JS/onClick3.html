@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>onClick3</title>
+		<script>
+			const calculator = (type) => {
+				const number1 = Number(document.getElementById('number1').value);
+				const number2 = Number(document.getElementById('number2').value);
+				if (type == 'add') {
+					document.write(number1 + number2);
+				} else {
+					document.write(number1 - number2);
+				}
+			};
+			// const myAdd = () => {
+			// 	const number1 = document.getElementById('number1').value;
+			// 	const number2 = document.getElementById('number2').value;
+			// 	const result = Number(number1) + Number(number2);
+			// 	document.write(result);
+			// };
+			// const mySub = () => {
+			// 	const number1 = document.getElementById('number1').value;
+			// 	const number2 = document.getElementById('number2').value;
+			// 	const result = Number(number1) - Number(number2);
+			// 	document.write(result);
+			// };
+		</script>
+	</head>
+	<body>
+		<label for="number1">Number1</label>
+		<input type="number" id="number1" name="numebr1" />
+		<label for="number2">Number2</label>
+		<input type="number" id="number2" name="numebr2" />
+		<button type="submit" onclick="calculator(add)">Add</button>
+		<button type="submit" onclick="calculator(sub)">Sub</button>
+	</body>
+</html>

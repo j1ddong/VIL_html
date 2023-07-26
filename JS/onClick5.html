@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>onClick5</title>
+		<script>
+			const repeat = () => {
+				const num1 = Number(document.getElementById('number').value);
+				for (let i = 0; i < num1; i++) {
+					document.write(num1 + '<br />');
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<form>
+			<label for="number">Enter Number</label>
+			<input id="number" type="number" name="number" />
+			<button type="button" onclick="repeat()">submit</button>
+		</form>
+	</body>
+</html>

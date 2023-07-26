@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>javaScript onClick</title>
+		<script>
+			const myFunction = () => {
+				const firstName = document.getElementById('firstName').value;
+				const lastName = document.getElementById('lastName').value;
+				document.write(firstName);
+				document.write(lastName);
+			};
+		</script>
+	</head>
+	<body>
+		<form>
+			<label for="firstName">Firstname</label>
+			<input type="text" id="firstName" name="firstName" />
+			<br />
+			<label>Lastname</label>
+			<input type="text" id="lastName" name="lastName" />
+			<br />
+			<button type="submit" onclick="myFunction()">submit</button>
+		</form>
+	</body>
+</html>
