@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>changeValue</title>
+		<script>
+			const changeValue = () => {
+				const originNum1 = document.getElementById('num1').value;
+				const originNum2 = document.getElementById('num2').value;
+				document.getElementById('num1').value = originNum2;
+				document.getElementById('num2').value = originNum1;
+			};
+			const isSameValue = () => {
+				const originNum1 = document.getElementById('num1').value;
+				const originNum2 = document.getElementById('num2').value;
+				if (originNum1 == originNum2) {
+					document.write('Both the numbers are equal');
+				} else {
+					document.write('Both the numbers are not equal');
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<label for="num1">Number1</label>
+		<input id="num1" type="number" name="num1" />
+		<br />
+		<label for="num2">Number2</label>
+		<input id="num2" type="number" name="num2" />
+		<br />
+		<button onclick="changeValue()">Change Value</button>
+		<button onclick="isSameValue()">Check Value is same</button>
+	</body>
+</html>

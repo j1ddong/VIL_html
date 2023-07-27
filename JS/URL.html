@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document URL using JS</title>
+		<script>
+			const showUrl = () => {
+				document.getElementById('txt1').value = document.URL;
+			};
+		</script>
+	</head>
+	<body>
+		<form>
+			<label>Screen URL is</label>
+			<input type="text" id="txt1" name="txturl" />
+			<input type="button" id="btn1" value="submit" onclick="showUrl()" />
+		</form>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			const findPerimeter = () => {
+				const length = Number(document.getElementById('length').value);
+				const width = Number(document.getElementById('width').value);
+				const result = (length + width) * 2;
+				document.write(`The perimeter is ${result}`);
+			};
+		</script>
+	</head>
+	<body>
+		<form>
+			<label>Enter Length</label>
+			<input id="length" type="number" />
+			<label>Enter Width</label>
+			<input id="width" type="number" />
+			<input type="submit" value="submit" onclick="findPerimeter()" />
+		</form>
+	</body>
+</html>

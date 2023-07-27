@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Find Prime Number</title>
+		<script>
+			const isPrime = (inputNum) => {
+				if (inputNum !== 2) {
+					for (let i = 2; i < inputNum; i++) {
+						if (inputNum % i === 0) {
+							return false;
+						}
+					}
+				} else {
+					return true;
+				}
+				return true;
+			};
+			const findPrimeNum = () => {
+				inputNum = document.getElementById('number').value;
+				const result = isPrime(inputNum);
+				if (result) {
+					document.write('This is Prime Number');
+				} else {
+					document.write('This is not Prime Number');
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<form>
+			<label for="number">Input Number</label>
+			<input id="number" type="number" name="primeNum" />
+			<input type="button" value="submit" onclick="findPrimeNum()" />
+		</form>
+	</body>
+</html>
