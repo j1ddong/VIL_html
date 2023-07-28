@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>switchImg</title>
+		<script>
+			const switchImg = () => {
+				const img1 = document.getElementById('newJeans');
+				const img2 = document.getElementById('aespa');
+				const img1URL = img1.src,
+					img2URL = img2.src;
+				img1.src = img2URL;
+				img2.src = img1URL;
+			};
+		</script>
+	</head>
+	<body>
+		<img
+			src="https://www.billboard.com/wp-content/uploads/2023/05/NewJeans-cr-ADOR-press-2023-billboard-1548.jpg"
+			alt="newJeans"
+			width="280px"
+			height="auto"
+			id="newJeans"
+		/>
+		<button type="button" onclick="switchImg()">Switch the images</button>
+		<img
+			src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkPH7eNFm29Kh_orsgm9ZKnCCucd_k7MJc6w&usqp=CAU"
+			alt="aespa"
+			width="280px"
+			height="auto"
+			id="aespa"
+		/>
+	</body>
+</html>

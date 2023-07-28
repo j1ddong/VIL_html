@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			const reverseString = () => {
+				const inputName = document.getElementById('name').value;
+				const reverseName = inputName.split('').reverse().join('');
+				document.write(reverseName);
+			};
+		</script>
+	</head>
+	<body>
+		<label for="name">Enter your name</label>
+		<input id="name" name="name" type="text" />
+		<input type="button" onclick="reverseString()" value="submit" />
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>evenIndex</title>
+		<script>
+			const findEvenIndex = () => {
+				const firstName = document.getElementById('firstName').value;
+				for (let i = 0; i < firstName.length; i += 2) {
+					document.write(`${firstName[i]} <br>`);
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<form>
+			<label for="firstName">Enter your first name</label>
+			<input id="firstName" type="text" name="firstName" />
+			<input type="button" id="btn" onclick="findEvenIndex()" value="submit" />
+		</form>
+	</body>
+</html>

@@ -18,18 +18,19 @@
 				}
 			};
 			const isPalindrome2 = () => {
-				let originNum = document.getElementById('number').value;
+				let inputNum = Number(document.getElementById('number').value);
 				let oppositeNum = 0;
-				let len = originNum.length;
-				originNum = Number(originNum);
-				while (originNum > 0) {
-					remainder = originNum % 10;
-					console.log('이거 더하는 거', parseInt(remainder * 10 * len));
-					oppositeNum += parseInt(remainder * 10 * len);
-					len--;
-					originNum = parseInt(originNum / 10);
+				const originNum = inputNum;
+				while (inputNum > 0) {
+					remainder = inputNum % 10;
+					oppositeNum = oppositeNum * 10 + remainder;
+					inputNum = parseInt(inputNum / 10);
 				}
-				// document.write(oppositeNum);
+				if (originNum === oppositeNum) {
+					document.write('It is  the palindrome');
+				} else {
+					document.write('It is not the palidrome');
+				}
 			};
 		</script>
 	</head>

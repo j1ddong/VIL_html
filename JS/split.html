@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>split</title>
+		<script>
+			const convertName = () => {
+				const inputName = document.getElementById('name').value;
+				const firstName = inputName.split(' ')[0],
+					lastName = inputName.split(' ')[1];
+				const convertName = [firstName, lastName[0] + '.'].join(' ');
+				document.write(convertName);
+			};
+		</script>
+	</head>
+	<body>
+		<form>
+			<label for="name">Enter your a name</label>
+			<input id="name" name="name" />
+			<input type="button" value="submit" onclick="convertName()" />
+		</form>
+	</body>
+</html>

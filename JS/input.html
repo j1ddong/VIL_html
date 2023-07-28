@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>input</title>
+		<script>
+			const checkNull = () => {
+				const firstName = document.getElementById('firstName').value;
+				const lastName = document.getElementById('lastName').value;
+				const address = document.getElementById('address').value;
+				const phoneNumber = document.getElementById('phoneNumber').value;
+				const postalCode = document.getElementById('postalCode').value;
+				const city = document.getElementById('city').value;
+				const country = document.getElementById('country').value;
+				if (
+					firstName &&
+					lastName &&
+					address &&
+					phoneNumber &&
+					postalCode &&
+					city &&
+					country
+				) {
+					document.write('submitted');
+				} else {
+					window.alert('Please Enter All ');
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<form>
+			<label for="firstName">Enter your first name</label>
+			<input id="firstName" name="firstName" />
+			<br />
+			<label for="lastName">Enter your last name</label>
+			<input id="lastName" name="lastName" />
+			<br />
+			<label for="address">Enter your address name</label>
+			<input id="address" name="address" />
+			<br />
+			<label for="phoneNumber">Enter your phone number</label>
+			<input id="phoneNumber" name="phoneNumber" />
+			<br />
+			<label for="postalCode">Enter your postal code</label>
+			<input id="postalCode" name="postalCode" />
+			<br />
+			<label for="city">Enter your city</label>
+			<input id="city" name="city" />
+			<br />
+			<label for="country">Enter your country</label>
+			<input id="country" name="country" />
+			<br />
+			<input type="button" value="submit" onclick="checkNull()" />
+		</form>
+	</body>
+</html>
