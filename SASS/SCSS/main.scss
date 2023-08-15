@@ -1,0 +1,47 @@
+@import './variables';
+@import './resets';
+
+@mixin flexContainer {
+	justify-content: center;
+	font-style: italic;
+	align-items: center;
+}
+@mixin theme($light-theme: true) {
+	@if $light-theme {
+		background: lighten($background-color, 100%);
+		color: darken($text-color, 100%);
+	}
+}
+@mixin mobile {
+	@media (max-width: 800px) {
+		@content;
+	}
+}
+@function weights($weight-name) {
+	@return map-get($font-weight, $weight-name);
+}
+@function flexDirection($direction) {
+	@return $direction;
+}
+
+body {
+	background-color: $background-color;
+	color: $text-color;
+	font-weight: weights(italic);
+}
+.main {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: flexDirection(row);
+	&_paragraph {
+		@include flexContainer();
+	}
+	@include mobile {
+		flex-direction: flexDirection((column));
+		background-color: green;
+	}
+}
+.light {
+	@include theme(true);
+}

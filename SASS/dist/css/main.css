@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blue;
+  color: white;
+  font-weight: 800;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.main_paragraph {
+  justify-content: center;
+  font-style: italic;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+    background-color: green;
+  }
+}
+
+.light {
+  background: white;
+  color: black;
+}/*# sourceMappingURL=main.css.map */
