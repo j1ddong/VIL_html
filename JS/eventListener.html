@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			const keyPress = () => {
+				document.getElementById('demo').innerHTML = 'key pressed!';
+			};
+			const keyReleased = () => {
+				document.getElementById('demo').innerHTML = 'key released!';
+			};
+			const focusIn = () => {
+				document.getElementById('demoInput').style.background = 'pink';
+			};
+			document.addEventListener('keypress', keyPress);
+			document.addEventListener('keyup', keyReleased);
+			document.addEventListener('focusin', focusIn);
+		</script>
+	</head>
+	<body>
+		<p id="demo"></p>
+		<input id="demoInput"></input>
+	</body>
+</html>
