@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+			integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>hihihni</h1>
+		<input />
+		<input />
+		<input />
+		<input />
+		<input />
+		<input />
+		<input />
+		<input />
+		<script>
+			// console.log($('h1').text());
+			// console.log($('input')[2]); // dom element
+			// console.log($($('input')[2]).val('text'));
+			// $('input').css('background-color', 'yellow');
+			// console.log($('input').css('background-color'));
+			// console.log($('input').click());
+			const focusHandler = (e) => {
+				// console.log($(e.target).parent().children('input').first()[0]);
+				if (e.type == 'focus') {
+					$(e.target).css('background-color', 'yellow');
+				} else if (e.type == 'blur') {
+					$(e.target).css('background-color', 'white');
+				}
+				if (
+					$(e.target)[0] == $(e.target).parent().children('input').first()[0]
+				) {
+					console.log('first element');
+				} else if (
+					$(e.target)[0] == $(e.target).parent().children('input').last()[0]
+				) {
+					console.log('last element');
+				}
+			};
+			$('input').on({ focus: focusHandler, blur: focusHandler });
+		</script>
+	</body>
+</html>

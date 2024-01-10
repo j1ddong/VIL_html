@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+			integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<style>
+			.box {
+				background-color: azure;
+				border: 1px solid blue;
+				border-radius: 5px;
+				width: 50px;
+				height: 50px;
+			}
+			.box:hover {
+				background-color: aliceblue;
+			}
+			.active {
+				background-color: cadetblue;
+			}
+		</style>
+	</head>
+	<body>
+		<button>Add</button>
+		<button disabled>Delete</button>
+		<button>Up</button>
+		<button>Down</button>
+		<main></main>
+		<script>
+			const deleteDis = () => {
+				if ($('.active').length > 0) {
+					$('button').eq(1).attr('disabled', false);
+				} else {
+					$('button').eq(1).attr('disabled', true);
+				}
+			};
+			const boxClick = (e) => {
+				if (e.ctrlKey) {
+					$(e.target).addClass('active');
+				} else if ($(e.target).hasClass('active')) {
+					$(e.target).removeClass('active');
+				} else {
+					$('.box').removeClass('active');
+					$(e.target).addClass('active');
+				}
+				deleteDis();
+			};
+			const deleteHandler = () => {
+				$('.active').remove();
+			};
+			const moveHandler = (e) => {
+				switch ($(e.target).text()) {
+					case 'Up':
+						if ($('.active').length == 1) {
+							if ($('.active')[0] == $('.box').first()[0]) {
+								$('.box').last().after($('.active'));
+							} else {
+								$('.active').prev().before($('.active'));
+							}
+						}
+						break;
+					case 'Down':
+						if ($('.active').length == 1) {
+							if ($('.active')[0] == $('.box').last()[0]) {
+								$('.box').first().before($('.active'));
+							} else {
+								$('.active').next().after($('.active'));
+							}
+						}
+						break;
+				}
+			};
+			$('button')
+				.eq(0)
+				.on('click', () => {
+					let box = $('<div></div>');
+					box.addClass('box');
+					box.on('click', boxClick);
+					// box.appendTo('main');
+					$('main').append(box);
+				});
+			$('button').eq(1).on('click', deleteHandler);
+			$('button').eq(2).on('click', moveHandler);
+			$('button').eq(3).on('click', moveHandler);
+		</script>
+	</body>
+</html>
