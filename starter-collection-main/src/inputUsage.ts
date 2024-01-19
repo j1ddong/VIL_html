@@ -9,12 +9,6 @@ const getRandomInt = (max: number): number => {
   return Math.floor(Math.random() * max) + 1;
 };
 
-/**
- * 1  2  3
- * 4  5  6
- * 8  7
- */
-
 const getRandomIntLst = () => {
   const uniqueNums = new Set();
   const maxNum = lstLen * lstLen;
@@ -117,7 +111,6 @@ const isSolved = (): boolean => {
   return true;
 };
 
-// 파일 나누기 > 최소 4개 [main, init, ctrl, console] variable export import
 // random lst 만들기...
 // count display
 // time remaining > setInterval
