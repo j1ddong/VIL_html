@@ -1,5 +1,5 @@
 import { waitForKeyPress, waitForUserInput } from "./utils/input/input.utils";
-import getRandomIntLst from "./puzzleGame/initLst";
+import makeRandomIntLst from "./puzzleGame/initLst";
 import logLst from "./puzzleGame/logLst";
 import isSolved from "./puzzleGame/isSovled";
 import keyCtrl from "./puzzleGame/keyCtrl";
@@ -30,7 +30,7 @@ async function main() {
   } while (!condition);
 
   lstLen = convertLen(inputString);
-  getRandomIntLst();
+  makeRandomIntLst();
   logLst();
 
   while (!isSolved()) {

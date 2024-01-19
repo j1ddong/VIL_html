@@ -111,7 +111,6 @@ const isSolved = (): boolean => {
   return true;
 };
 
-// random lst 만들기...
 // count display
 // time remaining > setInterval
 
