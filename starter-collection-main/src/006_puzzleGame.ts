@@ -7,6 +7,9 @@ import keyCtrl from "./puzzleGame/keyCtrl";
 let lst: (number | string)[][] = [];
 let lstLen: number = 0;
 const blockPosition: { row: number; column: number } = { row: 0, column: 0 };
+let count: number = 0;
+let time: number = 60;
+let timeId: NodeJS.Timeout;
 
 const convertLen = (inputString: string): number => {
   switch (inputString) {
@@ -18,6 +21,16 @@ const convertLen = (inputString: string): number => {
       return 5;
   }
   return 0;
+};
+
+const timer = (): void => {
+  logLst();
+  time--;
+  if (time < 0) {
+    clearInterval(timeId);
+    console.log("time out");
+    process.exit();
+  }
 };
 
 async function main() {
@@ -32,11 +45,13 @@ async function main() {
   lstLen = convertLen(inputString);
   makeRandomIntLst();
   logLst();
+  timeId = setInterval(timer, 1000);
 
   while (!isSolved()) {
     let keyInput = await waitForKeyPress();
     let keyInputCtrl: boolean = keyInput.ctrl;
     let keyInputName: string = keyInput.name;
+    count++;
 
     if (keyInputCtrl && keyInputName === "c") {
       return;
@@ -44,8 +59,9 @@ async function main() {
     keyCtrl(keyInput.ctrl, keyInput.name);
     logLst();
   }
-  console.log("게임해결!");
+  clearInterval(timeId);
+  console.log("Game sovled!");
 }
 main();
 
-export { lst, lstLen, blockPosition };
+export { lst, lstLen, blockPosition, count, time };

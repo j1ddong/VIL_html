@@ -1,4 +1,4 @@
-import { lst, lstLen } from "../006_puzzleGame";
+import { lst, lstLen, count, time } from "../006_puzzleGame";
 
 const logLst = (): void => {
   console.clear();
@@ -11,6 +11,8 @@ const logLst = (): void => {
     console.log(tempString);
   }
   console.log();
+  console.log(`The number of movements: ${count}`);
+  console.log(`Remaining Time: ${time}`);
 };
 
 export default logLst;

@@ -111,9 +111,6 @@ const isSolved = (): boolean => {
   return true;
 };
 
-// count display
-// time remaining > setInterval
-
 async function main() {
   let condition: boolean = false;
   let inputString: string = "";
