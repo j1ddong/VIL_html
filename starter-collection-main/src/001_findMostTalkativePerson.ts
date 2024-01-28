@@ -1,4 +1,4 @@
-import chatHistory from "./001_randomChatHistory.json";
+import chatHistory from "./datas/001_randomChatHistory.json";
 
 const talkedCount: { [senderId: string]: number } = {};
 let talkativePerson;

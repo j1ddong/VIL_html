@@ -1,4 +1,4 @@
-const chatHistory = require("./001_randomChatHistory.json");
+const chatHistory = require("./datas/001_randomChatHistory.json");
 
 //방에 제일 많이 참여한 유저
 let busiestPerson;

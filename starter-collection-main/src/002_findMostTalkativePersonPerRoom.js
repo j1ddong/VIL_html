@@ -1,4 +1,4 @@
-const chatHistory = require("./001_randomChatHistory.json");
+const chatHistory = require("./datas/001_randomChatHistory.json");
 
 const talkativePersonPerRoom = {};
 // {'chatRoomId': 'senderId'}
