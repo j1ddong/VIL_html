@@ -1,0 +1,29 @@
+.textCenter {
+  text-align: center;
+  margin-bottom: 0.25em;
+}
+.month {
+  font-weight: 900;
+  font-size: 70px;
+}
+
+.calendar {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+th,
+td {
+  border: 2px solid black;
+}
+
+td {
+  width: 80px;
+  height: 70px;
+  vertical-align: sub;
+}
+.gray {
+  color: rgb(172, 172, 172);
+}
+.source {
+  margin-top: 0;
+}
