@@ -1,0 +1,11 @@
+.dayOfWeek {
+	text-align: center;
+}
+
+.dayOfWeek > div {
+	display: inline-block;
+	border: 1px solid black;
+	height: 45px;
+	width: 100px;
+	line-height: 45px;
+}

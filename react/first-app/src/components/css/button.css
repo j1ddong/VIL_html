@@ -1,0 +1,10 @@
+.btn {
+	width: 75px;
+	height: 45px;
+	background-color: inherit;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 0 10px;
+}

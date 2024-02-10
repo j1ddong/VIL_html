@@ -1,0 +1,13 @@
+div {
+	box-sizing: content-box;
+}
+.calendarHead {
+	text-align: center;
+	margin: 50px 0;
+}
+.calendarTitle {
+	display: inline-block;
+	font-size: 30px;
+	margin: 0;
+	height: 45px;
+}

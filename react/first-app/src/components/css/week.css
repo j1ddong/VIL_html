@@ -1,0 +1,13 @@
+.week > div {
+	display: inline-block;
+	border: 1px solid black;
+	height: 45px;
+	width: 100px;
+	line-height: 45px;
+}
+.week {
+	text-align: center;
+}
+.hidden {
+	color: white;
+}
